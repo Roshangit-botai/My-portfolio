@@ -1,0 +1,169 @@
+
+html_code = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L Roshan Singh | Senior Software Developer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+  body {
+    background: radial-gradient(circle at top, #1e293b, #020617);
+    color: #e2e8f0;
+    line-height: 1.6;
+    perspective: 1500px;
+    overflow-x: hidden;
+  }
+
+  header {
+    text-align: center;
+    padding: 100px 20px;
+    transform-style: preserve-3d;
+    animation: floatIn 1.2s ease-out;
+  }
+  @keyframes floatIn {
+    from { opacity: 0; transform: translateY(-40px) rotateX(20deg); }
+    to { opacity: 1; transform: translateY(0) rotateX(0deg); }
+  }
+
+  header img {
+    width: 150px; height: 150px; border-radius: 50%; object-fit: cover;
+    margin-bottom: 20px; border: 3px solid #38bdf8;
+    box-shadow: 0 20px 40px rgba(56,189,248,0.4);
+    transform: translateZ(60px);
+  }
+
+  header h1 {
+    font-size: 3rem;
+    color: #38bdf8;
+    text-shadow: 0 5px 20px rgba(56,189,248,0.5);
+    transform: translateZ(40px);
+  }
+  header p { font-size: 1.3rem; margin-top: 10px; color: #94a3b8; transform: translateZ(20px); }
+
+  nav {
+    display: flex; justify-content: center; gap: 30px; padding: 20px;
+    background: rgba(30,41,59,0.6);
+    backdrop-filter: blur(10px);
+    position: sticky; top: 0; z-index: 10;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  }
+  nav a { color: #e2e8f0; text-decoration: none; font-weight: 600; transition: 0.3s; }
+  nav a:hover { color: #38bdf8; transform: translateY(-3px); display: inline-block; }
+
+  section { max-width: 900px; margin: 0 auto; padding: 80px 20px; }
+  section h2 {
+    font-size: 2.2rem; color: #38bdf8; margin-bottom: 30px;
+    border-bottom: 2px solid #334155; padding-bottom: 10px;
+  }
+
+  .card {
+    background: linear-gradient(145deg, #1e293b, #111827);
+    padding: 25px; border-radius: 16px; margin-bottom: 25px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  }
+  .card:hover {
+    transform: rotateX(6deg) rotateY(-6deg) translateZ(20px) scale(1.03);
+    box-shadow: 0 30px 50px rgba(56,189,248,0.25);
+  }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 14px; }
+  .skill-tag {
+    background: linear-gradient(145deg, #334155, #1e293b);
+    padding: 10px 18px; border-radius: 20px; font-size: 0.9rem;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  .skill-tag:hover { transform: translateZ(15px) scale(1.1); color: #38bdf8; }
+
+  .socials {
+    display: flex; justify-content: center; gap: 30px; padding: 50px 20px;
+    background: rgba(30,41,59,0.6);
+  }
+  .socials a {
+    color: #38bdf8; text-decoration: none; font-weight: 600; font-size: 1.1rem;
+    padding: 12px 24px; border: 1px solid #38bdf8; border-radius: 30px;
+    transition: 0.3s;
+    display: inline-block;
+  }
+  .socials a:hover {
+    background: #38bdf8; color: #0f172a; transform: translateY(-5px) rotateX(10deg);
+    box-shadow: 0 15px 25px rgba(56,189,248,0.4);
+  }
+
+  footer { text-align: center; padding: 20px; color: #64748b; }
+  .placeholder { color: #f59e0b; font-style: italic; }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="your-photo.jpg" alt="L Roshan Singh">
+  <h1>L Roshan Singh</h1>
+  <p>Senior Software Developer</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am a Senior Software Developer with a background from <strong>Garia College, Kolkata</strong>.
+    <span class="placeholder">[Add a short paragraph about your experience, passion, and specialty here.]</span></p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span class="skill-tag placeholder">Skill 1</span>
+    <span class="skill-tag placeholder">Skill 2</span>
+    <span class="skill-tag placeholder">Skill 3</span>
+    <span class="skill-tag placeholder">Skill 4</span>
+    <span class="skill-tag placeholder">Skill 5</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2>
+  <div class="card">
+    <h3 class="placeholder">Job Title - Company Name</h3>
+    <p class="placeholder">Duration (e.g., Jan 2022 - Present)</p>
+    <p class="placeholder">Description of your role and achievements.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3 class="placeholder">Project Name</h3>
+    <p class="placeholder">Short description of the project, technologies used, and outcome.</p>
+  </div>
+</section>
+
+<div class="socials" id="contact">
+  <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+  <a href="https://linkedin.com/in/yourhandle" target="_blank">LinkedIn</a>
+  <a href="https://github.com/yourhandle" target="_blank">GitHub</a>
+</div>
+
+<footer>
+  <p>&copy; 2026 L Roshan Singh. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+'''
+
+with open('/mnt/user-data/outputs/portfolio_3d.html', 'w') as f:
+    f.write(html_code)
+
+print("saved 3D version")
