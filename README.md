@@ -9,7 +9,6 @@ I am passionate about building intelligent systems and web applications.
 - HTML5
 - CSS3
 - JavaScript
-- (Add any other languages/frameworks you used)
 
 ## ✨ Features
 - Responsive design (works on mobile and desktop)
